@@ -1,1 +1,0 @@
-# JHGarciaxd.github.io
