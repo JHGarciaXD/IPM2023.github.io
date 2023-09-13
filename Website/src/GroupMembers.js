@@ -21,8 +21,7 @@ function GroupMembers() {
       <ul>
         {members.map((member, index) => (
           <li key={index}>
-            <img src={member.photo} alt={member.name} width="100" />
-            <p>Name: {member.name}</p>
+            <p style={{ fontSize: '1.5em' }}>{member.name}</p>
             <p>Student No: {member.studentNo}</p>
           </li>
         ))}

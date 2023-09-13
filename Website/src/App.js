@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import GroupMembers from './GroupMembers.js';
 import ProjectDescription from './ProjectDescription';
+import labImage from './images/tesla_bad_design.jpg';
 
 function App() {
   return (
@@ -11,8 +12,17 @@ function App() {
       </header>
       <GroupMembers />
       <section>
-        <h2>Lab Class Number</h2>
-        <p>Lab Class: #Number</p>
+        <h2>Lab Class 1</h2>
+        <section>
+          <h2>Lab Class 1: João Garcia</h2>
+          <a href="https://drive.google.com/file/d/1vuvf82eu3KfRz7UjCBlXAt0Th7-y0os-/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            Tesla bad design
+          </a>
+          <h2>Lab Class 1: Francisco Silvano</h2>
+          <a href="https://drive.google.com/file/d/1vuvf82eu3KfRz7UjCBlXAt0Th7-y0os-/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            Tesla bad design
+          </a>
+        </section>
       </section>
       <ProjectDescription />
       <footer>
