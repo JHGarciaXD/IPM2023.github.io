@@ -7,10 +7,13 @@ import labImage from './images/tesla_bad_design.jpg';
 function App() {
   return (
     <div className="App">
+
       <header>
-        <h1>Project Title</h1>
+        <h1>NOVA Maps</h1>
       </header>
-      <GroupMembers />
+      <div className="leftColumn">
+        <GroupMembers />
+      </div>
       <section>
         <h2>Lab Class 1</h2>
         <section>
@@ -24,7 +27,11 @@ function App() {
           </a>
         </section>
       </section>
+
+
       <ProjectDescription />
+
+
       <footer>
         <p>© 2023 Discipline Project Group. All rights reserved.</p>
       </footer>

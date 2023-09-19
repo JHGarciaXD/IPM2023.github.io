@@ -4,10 +4,14 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6; /* Enhances readability */
 }
 
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Centering the content */
+  align-items: center;
+  padding: 40px; /* Uniform spacing */
 }
 
 .App-logo {
@@ -17,7 +21,7 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-      animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
@@ -30,26 +34,41 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 40px; /* Uniform margin */
+  border-radius: 10px; /* Matching other elements */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header {
+header,
+section,
+footer {
+  border-radius: 10px;
+  margin: 40px; /* Consistent spacing */
+  padding: 20px; /* Consistent padding */
+}
+
+.leftColumn, .rightColumn {
+  margin: 0 20px; /* Consistent spacing between columns */
+}
+
+.leftColumn {
+  flex: 1;
+  max-width: 300px;
+}
+
+.rightColumn {
+  flex: 2;
+}
+
+header, footer {
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
   text-align: center;
 }
 
 h1, h2, h3 {
   margin: 0;
-  padding: 0.5em 0;
-}
-
-section {
-  margin: 20px auto;
-  max-width: 800px;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0; /* Consistent padding for headers */
 }
 
 ul {
@@ -73,7 +92,7 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -91,9 +110,10 @@ a:hover {
 
 @keyframes App-logo-spin {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

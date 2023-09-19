@@ -4,12 +4,21 @@ const members = [
   {
     name: "João Garcia",
     studentNo: '60106',
-    photo: 'path_to_member1_photo.jpg'
+
   },
   {
     name: "Francisco Silvano",
     studentNo: '60059',
-    photo: 'path_to_member2_photo.jpg'
+
+  }
+  ,
+  {
+    name: "Pedro Cavaleiro",
+    studentNo: '57974',
+  },
+  {
+    name: "Lucas Oliveira",
+    studentNo: '64485',
   }
   // Add more members as needed
 ];
@@ -22,6 +31,7 @@ function GroupMembers() {
         {members.map((member, index) => (
           <li key={index}>
             <p style={{ fontSize: '1.5em' }}>{member.name}</p>
+            <p></p>
             <p>Student No: {member.studentNo}</p>
           </li>
         ))}
