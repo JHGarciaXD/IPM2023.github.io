@@ -4,14 +4,72 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
-  line-height: 1.6; /* Enhances readability */
 }
 
 .App {
   display: flex;
-  justify-content: center; /* Centering the content */
-  align-items: center;
-  padding: 40px; /* Uniform spacing */
+  flex-direction: column;
+  min-height: 100vh;
+  /* Make the container at least as tall as the viewport */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  /* Center align the header content */
+  position: relative;
+  /* Added relative positioning */
+}
+
+main {
+  flex: 1;
+  /* Allow the main content to grow and take up available space */
+  padding: 20px;
+  overflow-y: auto;
+  /* Enable scrolling for the main content if needed */
+  position: relative;
+  /* Added relative positioning */
+}
+
+/* CSS for the "Projeto NOVA MAPS" header */
+h1 {
+  font-size: 2em;
+  /* Increase font size */
+  color: #333;
+  /* Text color */
+  margin-top: 20px;
+  /* Add some top margin */
+}
+
+h4 {
+  font-size: 2em;
+  /* Increase font size */
+  color: #333;
+  /* Text color */
+  margin-top: 30px;
+  /* Add some top margin */
+}
+
+/* CSS for the paragraphs */
+p {
+  font-size: 1.2em;
+  /* Increase font size */
+  line-height: 1.6;
+  /* Increase line height for better readability */
+  color: #555;
+  /* Text color */
+  margin-bottom: 20px;
+  /* Add bottom margin */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  /* Center align the footer content */
+  padding: 10px;
 }
 
 .App-logo {
@@ -25,87 +83,131 @@ body {
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Updated styles for the Membros button */
+.membros-button {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-color: #333;
+  color: white;
+  padding: 25px 30px;
+  /* Increase padding for a bigger button */
+  cursor: pointer;
+  border-radius: 5px;
+  /* Makes it circular */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  transition: background-color 0.3s ease;
+}
+
+
+.membros-button:hover {
+  background-color: #444;
+}
+
+/* Updated styles for the GroupMembers component */
+.group-members {
+  margin-top: 20px;
+}
+
+/* Updated styles for the project title link */
+header h1 a {
   color: white;
-  margin: 40px; /* Uniform margin */
-  border-radius: 10px; /* Matching other elements */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Set the text color explicitly */
+  text-decoration: none;
+  /* Remove the underline */
 }
 
-header,
-section,
-footer {
-  border-radius: 10px;
-  margin: 40px; /* Consistent spacing */
-  padding: 20px; /* Consistent padding */
+.member-item {
+  background-color: #f9f9f9;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  /* Added a transition effect */
 }
 
-.leftColumn, .rightColumn {
-  margin: 0 20px; /* Consistent spacing between columns */
+.member-item:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-2px);
 }
 
-.leftColumn {
-  flex: 1;
-  max-width: 300px;
-}
-
-.rightColumn {
-  flex: 2;
-}
-
-header, footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-}
-
-h1, h2, h3 {
+h2 {
+  font-size: 1.2em;
   margin: 0;
-  padding: 20px 0; /* Consistent padding for headers */
+  padding: 0.25em 0;
 }
 
-ul {
+p {
+  margin: 0;
+  padding: 0.25em 0;
+  font-size: 0.9em;
+}
+
+/* Updated styles for the user name buttons */
+.group-member a {
+  color: inherit;
+  /* Inherit the text color */
+  text-decoration: none;
+  /* Remove the underline */
+}
+
+.group-member a:hover {
+  text-decoration: underline;
+  /* Add underline on hover */
+}
+
+
+/* Updated styles for the group names container */
+.group-names {
+  position: absolute;
+  top: 5px;
+  /* Adjust this value to your preferred position */
+  right: 10px;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+/* New styles for the member blocks */
+.group-member-block {
+  margin: 5px;
+  padding: 10px;
+  background-color: #444;
+  /* Background color for the member block */
+  border-radius: 5px;
+}
+
+/* New styles for the member names */
+.group-member {
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+}
+
+.group-member:hover {
+  text-decoration: underline;
+}
+
+
+.group-names.active {
+  display: block;
+}
+
+.group-names ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-li {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-}
-
-img {
-  margin-right: 20px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-a, .App-link {
-  color: #61dafb;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #0056b3;
+.group-names .group-member {
+  margin: 5px 0;
 }
 
 @keyframes App-logo-spin {
