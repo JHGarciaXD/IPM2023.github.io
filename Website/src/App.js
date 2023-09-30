@@ -6,6 +6,8 @@ import JoaoPage from './membros/JoaoPage';
 import LucasPage from './membros/LucasPage';
 import PedroPage from './membros/PedroPage';
 
+import PedroT1 from './trabalhos/Pedro-T1.js';
+
 const members = [
   {
     name: 'Francisco Silvano',
@@ -28,15 +30,18 @@ const members = [
 function GroupMembers() {
   return (
     <section className="group-members">
-      <h2>Projeto realizado por:</h2>
-      <ul>
+      <center>
+        <h3 className='group-h3'>Membros da Equipa</h3>
+      
         {members.map((member, index) => (
           <li key={index} className="member-item">
-            <p style={{ fontSize: '1.5em' }}>{member.name}</p>
-            <p>Aluno nº: {member.studentNo}</p>
+            <center>
+            <p className='student-name'>{member.name}</p>
+            <p className='student-no'>Aluno nº: {member.studentNo}</p>
+            </center>
           </li>
         ))}
-      </ul>
+      </center>
     </section>
   );
 }
@@ -77,9 +82,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <header>
+        <header className='header-bunitu'>
           <h1>
-            <Link to="/">IPM 2023/2024</Link>
+            {/* Antes dizia IPM 2023/2024 */}
+            <Link to="/">Nova Maps</Link>
           </h1>
           <button className="membros-button" onClick={toggleGroupNames}>
             Membros
@@ -89,7 +95,7 @@ function App() {
           <div className="main-content">
             {showGroupNames && (
               <div className={`group-names ${showGroupNames ? 'active' : ''}`}>
-                <ul>
+                
                   {members.map((member, index) => (
                     <li key={index} className="group-member">
                       <Link to={`/${member.name.toLowerCase().replace(' ', '-')}` && `/${removeAccents(member.name)}`}>
@@ -98,7 +104,7 @@ function App() {
                     </li>
                   ))}
 
-                </ul>
+                
               </div>
             )}
             <Switch>
@@ -106,6 +112,7 @@ function App() {
               <Route path="/joao-garcia" component={JoaoPage} />
               <Route path="/lucas-oliveira" component={LucasPage} />
               <Route path="/pedro-cavaleiro" component={PedroPage} />
+              <Route path="/pedro-t1" component={PedroT1} />
               <Route path="/">
                 {showGroupNames && (
                   <div className={`group-names ${showGroupNames ? 'active' : ''}`}>
@@ -121,7 +128,8 @@ function App() {
                   </div>
                 )}
                 <GroupMembers />
-                <h4>Projeto NOVA MAPS</h4>
+                <center>
+                  <h4>Projeto NOVA MAPS</h4>
                 <p>
                   Our project aims to address the challenge of efficiently navigating the vast and complex campus of the Faculty of Science and Technology (FCT). Students and staff often face difficulties finding specific locations, classrooms, or important facilities, leading to wasted time and frustration. They require a user-friendly solution to simplify campus navigation.
                 </p>
@@ -141,14 +149,15 @@ function App() {
                 >
                   Entrega1
                 </a>
+                </center>
                 {/* Rest of your content */}
               </Route>
             </Switch>
           </div>
         </main>
       </Router>
-      <footer>
-        <p>IPM 2023/2024 - Grupo 8</p>
+      <footer className='header-bunitu'>
+        <p className='footer-text'>© 2023/2024 IPM Grupo 8, Todos os direitos reservados </p>
       </footer>
     </div>
   );
