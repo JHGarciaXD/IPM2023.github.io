@@ -1,11 +1,12 @@
 import React from 'react';
+import LucasT1 from '../trabalhos/lucas-t1.docx'
 
 const LucasPage = () => {
     const name = 'Lucas Oliveira';
     const assignments = [
         {
             title: 'Trabalho 1',
-            link: 'https://drive.google.com/file/d/1vuvf82eu3KfRz7UjCBlXAt0Th7-y0os-/view?usp=drive_link'
+            link: LucasT1
         },
         {
             title: 'Trabalho 2',
@@ -24,8 +25,8 @@ const LucasPage = () => {
                         <h4>{assignment.title}</h4>
                         <p>{assignment.description}</p>
                         {assignment.link && (
-                            <a href={assignment.link} target="_blank" rel="noopener noreferrer">
-                                Bons e maus exemplos
+                            <a href={assignment.link} target="_blank" rel="noopener noreferrer" download>
+                                Bons e maus exemplos de design
                             </a>
                         )}
                     </li>
