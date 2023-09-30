@@ -12,7 +12,7 @@ const members = [
     studentNo: '60059',
   },
   {
-    name: 'João Garcia',
+    name: 'Joao Garcia',
     studentNo: '60106',
   },
   {

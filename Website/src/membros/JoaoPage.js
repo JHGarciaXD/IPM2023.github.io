@@ -5,7 +5,7 @@ const JoaoPage = () => {
     const assignments = [
         {
             title: 'Trabalho 1',
-            link: 'https://drive.google.com/file/d/1vuvf82eu3KfRz7UjCBlXAt0Th7-y0os-/view?usp=drive_link'
+            link: 'https://drive.google.com/file/d/1nOmeq0nkl2qbI4iHs_CUVQtZpnriFjS_/view?usp=drive_link'
         },
         {
             title: 'Trabalho 2',
