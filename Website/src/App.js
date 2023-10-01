@@ -32,12 +32,12 @@ function GroupMembers() {
     <section className="group-members">
       <center>
         <h3 className='group-h3'>Membros da Equipa</h3>
-      
+
         {members.map((member, index) => (
           <li key={index} className="member-item">
             <center>
-            <p className='student-name'>{member.name}</p>
-            <p className='student-no'>Aluno nº: {member.studentNo}</p>
+              <p className='student-name'>{member.name}</p>
+              <p className='student-no'>Aluno nº: {member.studentNo}</p>
             </center>
           </li>
         ))}
@@ -95,16 +95,16 @@ function App() {
           <div className="main-content">
             {showGroupNames && (
               <div className={`group-names ${showGroupNames ? 'active' : ''}`}>
-                
-                  {members.map((member, index) => (
-                    <li key={index} className="group-member">
-                      <Link to={`/${member.name.toLowerCase().replace(' ', '-')}` && `/${removeAccents(member.name)}`}>
-                        {member.name}
-                      </Link>
-                    </li>
-                  ))}
 
-                
+                {members.map((member, index) => (
+                  <li key={index} className="group-member">
+                    <Link to={`/${member.name.toLowerCase().replace(' ', '-')}` && `/${removeAccents(member.name)}`}>
+                      {member.name}
+                    </Link>
+                  </li>
+                ))}
+
+
               </div>
             )}
             <Switch>
@@ -130,25 +130,25 @@ function App() {
                 <GroupMembers />
                 <center>
                   <h4>Projeto NOVA MAPS</h4>
-                <p>
-                  Our project aims to address the challenge of efficiently navigating the vast and complex campus of the Faculty of Science and Technology (FCT). Students and staff often face difficulties finding specific locations, classrooms, or important facilities, leading to wasted time and frustration. They require a user-friendly solution to simplify campus navigation.
-                </p>
-                <img
-                  src="/novaMaps.png"
-                  alt="Project Image"
-                  style={{ maxWidth: '100%' }}
-                />
+                  <p>
+                    Our project aims to address the challenge of efficiently navigating the vast and complex campus of the Faculty of Science and Technology (FCT). Students and staff often face difficulties finding specific locations, classrooms, or important facilities, leading to wasted time and frustration. They require a user-friendly solution to simplify campus navigation.
+                  </p>
+                  <img
+                    src="/novaMaps.png"
+                    alt="Project Image"
+                    style={{ maxWidth: '100%' }}
+                  />
 
-                <p>
-                  The main goal of our project is to develop an application that provides a user-friendly map of the FCT campus, highlighting key points of interest such as lecture halls, laboratories, cafeterias, and administrative offices. Users will be able to easily search for specific locations and access detailed information about each point of interest. Our solution will also allow for updates on events and any changes in facility availability. We are open to modifying our solution based on user feedback and evaluation procedures to ensure it aligns with user needs. We also want to provide information about what’s in stock on each store (around the campus).
-                </p>
-                <a
-                  href="https://drive.google.com/file/d/1h_ZW-z-nOhnK2IFWCqdKfe3zZoGyqESq/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Entrega1
-                </a>
+                  <p>
+                    The main goal of our project is to develop an application that provides a user-friendly map of the FCT campus, highlighting key points of interest such as lecture halls, laboratories, cafeterias, and administrative offices. Users will be able to easily search for specific locations and access detailed information about each point of interest. Our solution will also allow for updates on events and any changes in facility availability. We are open to modifying our solution based on user feedback and evaluation procedures to ensure it aligns with user needs. We also want to provide information about what’s in stock on each store (around the campus).
+                  </p>
+                  <a
+                    href="https://drive.google.com/file/d/13hQ_iWvzdRF4JPTfuf-kMRO-xxf5XU05/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Entrega1
+                  </a>
                 </center>
                 {/* Rest of your content */}
               </Route>
