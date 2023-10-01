@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.8eb126a3.css",
-    "main.js": "/static/js/main.f61e287b.js",
+    "main.css": "/static/css/main.448f36b7.css",
+    "main.js": "/static/js/main.fd02ed58.js",
     "static/js/787.19e5edf9.chunk.js": "/static/js/787.19e5edf9.chunk.js",
-    "static/media/tesla_bad_design.jpg": "/static/media/tesla_bad_design.c65aaed8c98a62cdf58a.jpg",
+    "static/media/lucas-t1.docx": "/static/media/lucas-t1.d71605a2479b96b0993b.docx",
     "index.html": "/index.html",
-    "main.8eb126a3.css.map": "/static/css/main.8eb126a3.css.map",
-    "main.f61e287b.js.map": "/static/js/main.f61e287b.js.map",
+    "main.448f36b7.css.map": "/static/css/main.448f36b7.css.map",
+    "main.fd02ed58.js.map": "/static/js/main.fd02ed58.js.map",
     "787.19e5edf9.chunk.js.map": "/static/js/787.19e5edf9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8eb126a3.css",
-    "static/js/main.f61e287b.js"
+    "static/css/main.448f36b7.css",
+    "static/js/main.fd02ed58.js"
   ]
 }
