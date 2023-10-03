@@ -22,7 +22,7 @@ const members = [
   },
   {
     name: 'Pedro Cavaleiro',
-    studentNo: '57947',
+    studentNo: '57974',
   },
 ];
 
