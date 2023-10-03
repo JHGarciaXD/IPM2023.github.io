@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, Switch, Route } from 'react-router-dom';
 
 const FranciscoPage = () => {
     const name = 'Francisco Silvano';

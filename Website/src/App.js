@@ -5,9 +5,8 @@ import FranciscoPage from './membros/FranciscoPage';
 import JoaoPage from './membros/JoaoPage';
 import LucasPage from './membros/LucasPage';
 import PedroPage from './membros/PedroPage';
-
 import PedroT1 from './trabalhos/Pedro-T1.js';
-
+import novaMapsImage from './images/novaMaps.png';
 const members = [
   {
     name: 'Francisco Silvano',
@@ -134,10 +133,13 @@ function App() {
                     Our project aims to address the challenge of efficiently navigating the vast and complex campus of the Faculty of Science and Technology (FCT). Students and staff often face difficulties finding specific locations, classrooms, or important facilities, leading to wasted time and frustration. They require a user-friendly solution to simplify campus navigation.
                   </p>
                   <img
-                    src="/novaMaps.png"
+                    src={novaMapsImage}
                     alt="Project Image"
                     style={{ maxWidth: '100%' }}
                   />
+
+
+
 
                   <p>
                     The main goal of our project is to develop an application that provides a user-friendly map of the FCT campus, highlighting key points of interest such as lecture halls, laboratories, cafeterias, and administrative offices. Users will be able to easily search for specific locations and access detailed information about each point of interest. Our solution will also allow for updates on events and any changes in facility availability. We are open to modifying our solution based on user feedback and evaluation procedures to ensure it aligns with user needs. We also want to provide information about what’s in stock on each store (around the campus).
@@ -157,7 +159,7 @@ function App() {
         </main>
       </Router>
       <footer className='header-bunitu'>
-        <p className='footer-text'>© 2023/2024 IPM Grupo 8, Todos os direitos reservados </p>
+        <p className='footer-text'>2023/2024 IPM Grupo 8 </p>
       </footer>
     </div>
   );

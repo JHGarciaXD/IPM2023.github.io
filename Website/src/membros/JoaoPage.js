@@ -5,32 +5,35 @@ const JoaoPage = () => {
     const assignments = [
         {
             title: 'Trabalho 1',
+            name: 'Bons e Maus exemplos de Design',
             link: 'https://drive.google.com/file/d/1nOmeq0nkl2qbI4iHs_CUVQtZpnriFjS_/view?usp=drive_link'
         },
-        {
-            title: 'Trabalho 2',
-            link: '',
-        },
+
         // Add more assignments here
     ];
 
     return (
         <div>
-            <h2>{name}</h2>
-            <h3>Assignments:</h3>
-            <ul>
+            <center>
+
+                <h4>{name}</h4>
+                <hr />
+                <h2>Assignments:</h2>
+                <hr />
+
                 {assignments.map((assignment, index) => (
-                    <li key={index}>
-                        <h4>{assignment.title}</h4>
-                        <p>{assignment.description}</p>
+                    <h3 key={index}>
+                        &nbsp;
+                        <h3>{assignment.title}</h3>
+                        &nbsp;
                         {assignment.link && (
                             <a href={assignment.link} target="_blank" rel="noopener noreferrer">
                                 Bons e maus exemplos
                             </a>
-                        )}
-                    </li>
+                        )}  </h3>
                 ))}
-            </ul>
+            </center>
+
         </div>
     );
 };
