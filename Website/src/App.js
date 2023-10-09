@@ -149,7 +149,17 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Entrega1
+                    Stage 1: project proposal
+                  </a>
+                  <p>                  </p>
+
+
+                  <a
+                    href="https://drive.google.com/file/d/1ABq45t4tRkibLCFsaFu_zv9nM_ZPAC1j/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Stage 2: User and Task analysis
                   </a>
                 </center>
                 {/* Rest of your content */}
