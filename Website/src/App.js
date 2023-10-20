@@ -149,17 +149,23 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Stage 1: project proposal
+                    Stage 1: Project proposal
                   </a>
                   <p>                  </p>
-
-
                   <a
                     href="https://drive.google.com/file/d/1ABq45t4tRkibLCFsaFu_zv9nM_ZPAC1j/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Stage 2: User and Task analysis
+                  </a>
+                  <p>                  </p>
+                  <a
+                    href="https://drive.google.com/file/d/1gKD_Wg3JLd1E0whMWy5QFDkMtxb0ZS8P/view?usp=share_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Stage 3: 1st Prototype
                   </a>
                 </center>
                 {/* Rest of your content */}
