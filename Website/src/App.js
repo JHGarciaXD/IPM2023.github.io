@@ -169,11 +169,19 @@ function App() {
                   </a>
                   <p>                  </p>
                   <a
-                    href="https://drive.google.com/file/d/1yzCNQiwh9dEHmZHC_2LJS3KP1kjmkrpe/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1LEa0_NA5W0ha8jVecMC_wfbof3Gg6DUK/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Stage 4: Computational prototype
+                  </a>
+                  <p>                  </p>
+                  <a
+                    href="https://drive.google.com/file/d/1yzCNQiwh9dEHmZHC_2LJS3KP1kjmkrpe/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    NOVA Maps APK
                   </a>
                 </center>
                 {/* Rest of your content */}
