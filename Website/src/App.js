@@ -167,6 +167,14 @@ function App() {
                   >
                     Stage 3: 1st Prototype
                   </a>
+                  <p>                  </p>
+                  <a
+                    href="https://drive.google.com/file/d/1yzCNQiwh9dEHmZHC_2LJS3KP1kjmkrpe/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Stage 4: Computational prototype
+                  </a>
                 </center>
                 {/* Rest of your content */}
               </Route>
