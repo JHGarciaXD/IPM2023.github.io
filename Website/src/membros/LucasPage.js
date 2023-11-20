@@ -1,5 +1,5 @@
 import React from 'react';
-import LucasT1 from '../trabalhos/lucas-t1.docx'
+import LucasT1 from '../trabalhos/lucas-t1.pdf'
 
 const LucasPage = () => {
     const name = 'Lucas Oliveira';
