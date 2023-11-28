@@ -177,11 +177,43 @@ function App() {
                   </a>
                   <p>                  </p>
                   <a
+                    href="https://drive.google.com/file/d/1CnNIrMpg1FhmZq5-rN2vJNxTzcaA3O8i/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Stage 5: Heuristic Evaluation (made by group 7)
+                  </a>
+                  <p>                  </p>
+                  <a
+                    href="https://drive.google.com/file/d/1snOzi1Ww0vl9c2YrJqoXkKo3q_-WCxjt/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Stage 5: Heuristic Evaluation (group 3 project)
+                  </a>
+                  <p>                  </p>
+                  <a
+                    href="https://drive.google.com/file/d/1caWOFPd6WVIrF7j16jlTIaHL2gFzpPKi/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Stage 6: Evaluation results and presentation of the final project
+                  </a>
+                  <p>                  </p>
+                  <a
                     href="https://drive.google.com/file/d/1yzCNQiwh9dEHmZHC_2LJS3KP1kjmkrpe/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     NOVA Maps APK
+                  </a>
+                  <p>                  </p>
+                  <a
+                    href="https://drive.google.com/file/d/1SAJikqHDkshhpRWNM-jdruxgy90EJEBk/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Updated NOVA Maps APK
                   </a>
                 </center>
                 {/* Rest of your content */}
