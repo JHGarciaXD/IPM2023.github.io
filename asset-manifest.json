@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.448f36b7.css",
-    "main.js": "/static/js/main.de0a4009.js",
+    "main.js": "/static/js/main.b69ea019.js",
     "static/js/787.19e5edf9.chunk.js": "/static/js/787.19e5edf9.chunk.js",
     "static/media/lucas-t1.pdf": "/static/media/lucas-t1.23ddecca61f34f16877a.pdf",
     "static/media/novaMaps.png": "/static/media/novaMaps.ac24386d6c642c5e82e9.png",
     "index.html": "/index.html",
     "main.448f36b7.css.map": "/static/css/main.448f36b7.css.map",
-    "main.de0a4009.js.map": "/static/js/main.de0a4009.js.map",
+    "main.b69ea019.js.map": "/static/js/main.b69ea019.js.map",
     "787.19e5edf9.chunk.js.map": "/static/js/787.19e5edf9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.448f36b7.css",
-    "static/js/main.de0a4009.js"
+    "static/js/main.b69ea019.js"
   ]
 }
